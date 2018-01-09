@@ -1,0 +1,74 @@
+/* ASIDE MENU */
+  .mainpage{
+    width:100%;
+    height:100vh;
+    position:relative;
+    z-index:1;
+    transition: 0.5s;
+    left:0;
+    top:38px;
+  }
+  .overlay{
+    background:#222;
+    width:100vw;
+    height:100vh;
+    opacity:0;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:2;
+    display:none;
+  }
+  .overlayOn{display:block;opacity:0.3;}
+  aside{
+    width:370px;
+    min-height:100vh;
+    background:#efefef;
+    position:fixed;
+    left:-370px;
+    top:0;
+    z-index:1000;
+    transition: 0.5s;
+  }
+  .showProductsMenu{
+    background-color: #2f414b;
+    border: 1px solid #2f414b;
+    color: #fff;
+    padding:11px;
+    cursor: pointer;
+    z-index:1001;
+    white-space: nowrap;
+    text-transform: uppercase;
+    width: 370px;
+    position:absolute;
+    top:38px;
+  }
+  .showProductsMenu img {
+    vertical-align:middle;
+    margin-right:5px;
+  }
+  .hideMenu{left: -370px;}
+  .showMenu{left:0px;}
+  .moveMainpageArea{left:370px;}
+  #asideProductsMenu{
+    padding-top:98px;
+  }
+  #showProductsButton svg{
+    height: 34px;
+    width: 34px;
+    fill: #fff;
+    position: absolute;
+    left:-420px;
+    right: inherit;
+    top: 10px;
+    transition: 0.5s;
+    opacity:0;
+  }
+  .showProductsMenu.showCloseMenu{position:fixed;}
+  #showProductsButton.showCloseMenu svg{
+    right:10px;
+    left:inherit;
+    opacity:1;
+  }
+
+/* ASIDE MENU END */
